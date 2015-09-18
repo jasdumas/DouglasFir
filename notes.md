@@ -3,3 +3,4 @@
 
 1. Review [Genetic Science Learning Labs](http://learn.genetics.utah.edu/content/labs/extraction/) 
    * DNA Extraction
+   * 
