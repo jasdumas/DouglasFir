@@ -21,3 +21,4 @@
 3. Examples of Annotation Databases: Ensembl, RefSeq, FlyBase, WormBase, Mouse Genome Informatics
    Every time we use techniques such as RNAi, PCR, gene expression arrays, targeted gene knockout, or ChIP we are   **basing our experiments on the information derived from a digitally stored genome annotation**. If an annotation is correct, then these experiments should succeed; however, if an annotation is incorrect then the experiments that are based on that annotation are bound to fail. 
 4. http://pinegenome.org/pinerefseq/files/PAG2015_Wegrzyn_PineRefSeq.pdf
+5. The transcriptome is the set of all RNA molecules, including mRNA, rRNA, tRNA, and other non-coding RNA   transcribed in one cell or a population of cells. It differs from the exome in that it includes only those RNA molecules found in a specified cell population, and usually includes the amount or concentration of each RNA molecule in addition to the molecular identities.
