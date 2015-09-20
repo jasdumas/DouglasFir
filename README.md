@@ -22,6 +22,7 @@ MAKER-P: http://www.yandell-lab.org/software/maker-p.html
 To get some background on the complexities of these genomes - I suggest a read through of the published loblolly pine genome (the first of the three conifers sequenced)
 
 http://www.genomebiology.com/2014/15/3/R59
+
 http://www.genetics.org/content/196/3/875.long
 
 The software development aspect of this is an evaluation of the accuracy of gene prediction and some potential solutions to improve upon this via more accurate machine learning techniques.  The current implementation of AUGUSTUS within MAKER-P is not as good as we would hope.  The caveat here though is that gene prediction is a very difficult problem in bioinformatics so specific shortcomings will need to be identified so they can be improved.  At the same time, we will be annotating one of the largest genomes sequenced on the planet.
