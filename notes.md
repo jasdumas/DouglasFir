@@ -71,6 +71,7 @@ _**How to download protien sequence data for gene species Vitis Vinifera:**_
 7. To copy files To the server run the following on your workstation or laptop (open up another shell script alongside the UCONN bash shell):
 
    `scp -r <path_to_directory> <your_username>@<host_name>: # recursively for multiple files`
+   
    `scp /Users/jasminedumas/Downloads/sequence.fasta jasdumas@bbcsrv3.biotech.uconn.edu: # for single files`
 
 ![alt tag](https://cloud.githubusercontent.com/assets/6685750/10000896/eca78c12-606c-11e5-91bd-a11a51e12d4a.jpeg)
