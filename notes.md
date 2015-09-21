@@ -25,3 +25,14 @@
 4. http://pinegenome.org/pinerefseq/files/PAG2015_Wegrzyn_PineRefSeq.pdf
 
 5. The transcriptome is the set of all RNA molecules, including mRNA, rRNA, tRNA, and other non-coding RNA   transcribed in one cell or a population of cells. It differs from the exome in that it includes only those RNA molecules found in a specified cell population, and usually includes the amount or concentration of each RNA molecule in addition to the molecular identities.
+
+
+## September 21st 2015
+
+Links:
+1. https://dendrome.ucdavis.edu/treegenes/
+2. http://nar.oxfordjournals.org/content/32/suppl_2/W309.long
+3. https://www.youtube.com/watch?v=yWsDt54bezo
+4. https://en.wikipedia.org/wiki/Pinus_taeda
+5. https://en.wikipedia.org/wiki/Hidden_Markov_model
+6. https://en.wikipedia.org/wiki/FASTA_format
