@@ -53,6 +53,16 @@ Links:
 
 9. http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=3694&lvl=3
 
-10. 
+_**How to download protien sequence data for gene species Vitis Vinifera:**_
+
+1. Search for **Vitis vinifera** on the [TreeGenes Database](https://dendrome.ucdavis.edu/treegenes/species/index.php?#results)
+
+2. Scroll to the bottom of the page to view the results and Select the Species Link to the [NCBI Taxonomy Browser](http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=29760)
+
+3. Click on the [main header](http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=29760&lvl=3&lin=f&keep=1&srchmode=1&unlock)
+
+4. On the right-hand side table: "Entrez records", click the **Protein** [link](http://www.ncbi.nlm.nih.gov/protein/?term=txid29760[Organism:exp])
+
+5. ![alt tag](https://www.dropbox.com/s/y6ifqwdkfsjut22/Screen%20Shot%202015-09-21%20at%201.52.44%20PM.jpeg?dl=0)
 
 
