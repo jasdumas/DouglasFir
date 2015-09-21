@@ -29,10 +29,18 @@
 
 ## September 21st 2015
 
+10am @UCONN 
+
 Links:
+
 1. https://dendrome.ucdavis.edu/treegenes/
+
 2. http://nar.oxfordjournals.org/content/32/suppl_2/W309.long
+ 
 3. https://www.youtube.com/watch?v=yWsDt54bezo
+
 4. https://en.wikipedia.org/wiki/Pinus_taeda
+ 
 5. https://en.wikipedia.org/wiki/Hidden_Markov_model
+ 
 6. https://en.wikipedia.org/wiki/FASTA_format
