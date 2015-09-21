@@ -31,6 +31,8 @@
 
 10am @UCONN 
 
+Tutorial: http://bioinformatics.uconn.edu/resources-and-events/tutorials/rna-seq-tutorial-with-reference-genome/
+
 Links:
 
 1. https://dendrome.ucdavis.edu/treegenes/
@@ -44,3 +46,13 @@ Links:
 5. https://en.wikipedia.org/wiki/Hidden_Markov_model
  
 6. https://en.wikipedia.org/wiki/FASTA_format
+
+7. http://www.ncbi.nlm.nih.gov/protein
+
+8. http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=424432
+
+9. http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=3694&lvl=3
+
+10. 
+
+
