@@ -73,7 +73,7 @@ _**How to download protien sequence data for gene species Vitis Vinifera:**_
    `scp -r <path_to_directory> <your_username>@<host_name>: # recursively for multiple files`
    `scp /Users/jasminedumas/Downloads/sequence.fasta jasdumas@bbcsrv3.biotech.uconn.edu: # for single files`
 
-![alt tag]()
+![alt tag](https://cloud.githubusercontent.com/assets/6685750/10000896/eca78c12-606c-11e5-91bd-a11a51e12d4a.jpeg)
 
 Note: this also needs to be completed for Populus trichocarpa, Eucalyptus as suggested from Jill from Skype:
 > Greetings all, just a note that as we are gathering outside resources for inclusion, I would keep it refined to those that actually map nicely against the genome.  Exonerate works very well to take proteins against nucleotide assemblies of genomes (though it is not particularly fast).  Gmap works the best for transcriptomes but watch the parameters because they matter.  Gmap will for example split an alignment across scaffolds without telling you and in this case, we won;t want to consider those for proteins, I would make use of the following species primarily: Vitis vinifera, Populus trichocarpa, Eucalyptus, both spruce projects (gather most recent sets from Congenie since they are not in Genbank), loblolly pine high quality from annotation release 3, recent amborella genome (one of the sequenced common ancestors of angios and gymnos), and throw in rice as well to represent monocot.
