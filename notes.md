@@ -79,4 +79,15 @@ _**How to download protien sequence data for gene species Vitis Vinifera:**_
 Note: this also needs to be completed for Populus trichocarpa, Eucalyptus as suggested from Jill from Skype:
 > Greetings all, just a note that as we are gathering outside resources for inclusion, I would keep it refined to those that actually map nicely against the genome.  Exonerate works very well to take proteins against nucleotide assemblies of genomes (though it is not particularly fast).  Gmap works the best for transcriptomes but watch the parameters because they matter.  Gmap will for example split an alignment across scaffolds without telling you and in this case, we won;t want to consider those for proteins, I would make use of the following species primarily: Vitis vinifera, Populus trichocarpa, Eucalyptus, both spruce projects (gather most recent sets from Congenie since they are not in Genbank), loblolly pine high quality from annotation release 3, recent amborella genome (one of the sequenced common ancestors of angios and gymnos), and throw in rice as well to represent monocot.
 
+## September 25th 2015
+
+noon @ Home
+
+1. Go to Plaza as an alternative starting place for finding the remainding gennomes for the Protein DB http://plaza.psb.ugent.be
+2. Go to Plaza [Dicots 3.0](http://bioinformatics.psb.ugent.be/plaza/versions/plaza_v3_dicots/)
+3. Go to the [downloads page](http://bioinformatics.psb.ugent.be/plaza/versions/plaza_v3_dicots/download/index) and navigate to the FASTA data dropdown menu
+4. Find [Eucalyptus main page](http://bioinformatics.psb.ugent.be/plaza/versions/plaza_v3_dicots/organism/view/Eucalyptus+grandis) and click to open it 
+5. Click in [NCBI link](http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=71139)![alt tag](https://cloud.githubusercontent.com/assets/6685750/10105920/8fa52216-637f-11e5-95a6-8b89837d209f.jpeg)
+6. Click the Protein link and follow the 5th step in the previous dy about downloading the fasta data file ![alt tag](https://cloud.githubusercontent.com/assets/6685750/10105913/8896d74e-637f-11e5-85d4-caa6b8a64d62.jpeg)
+
 
