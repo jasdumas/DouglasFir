@@ -91,3 +91,20 @@ noon @ Home
 6. Click the Protein link and follow the 5th step in the previous dy about downloading the fasta data file ![alt tag](https://cloud.githubusercontent.com/assets/6685750/10105913/8896d74e-637f-11e5-85d4-caa6b8a64d62.jpeg)
 
 
+## September 29th 2015
+
+3:15PM @ HOME
+
+* I had to wait until the douglas-fir genome was put into the server that I have access to from Robin
+
+> I have uploaded the Doug-fir genome in BBC. This can be found using the following path:
+> /archive/PineRefSeq/douglasfir/Psme_v1.0.fasta - email from Robin
+
+1. I created a script so that I would be able to submit multiple jobs to be run using my [atom text editor](https://atom.io/). I named the file proteindb.sh with a **.sh** Extension.
+
+2. I moved the file from the local computer to my bbc server with the `scp` command
+
+3. Then after logging into my account. I called the following command: `[jasdumas@bbcsrv3 ~]$ qsub proteindb.sh
+Your job 73382 ("proteindb.sh") has been submitted`
+
+4. Job status and tutorial [refference from the lab site](http://bioinformatics.uconn.edu/understanding-the-bbc-cluster-and-sge/)
