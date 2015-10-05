@@ -119,6 +119,7 @@ Email from Jill: Still need
  * http://bioinformatics.psb.ugent.be/plaza/versions/plaza_v3_dicots/organism/view/Amborella+trichopoda
  
 2. the monocot rice (Oryza) 
+ * http://bioinformatics.psb.ugent.be/plaza/versions/plaza_v3_dicots/organism/view/Oryza+sativa+ssp.+japonica
 
 3. a set of our closely related gymnosperm sequences which are mostly hosted through the Congenie project.
 
