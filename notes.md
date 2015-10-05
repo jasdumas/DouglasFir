@@ -126,3 +126,15 @@ Email from Jill: Still need
 http://phytozome.jgi.doe.gov/pz/portal.html
 http://congenie.org/downloads
 
+### Tasks:
+
+* Transfer all files to the directory  `/archive/PineRefSeq/douglasfir/proteinDB`. My common `/home/jasdumas` folder is getting to large. use `mv` command
+
+* Alter permission of files with `chmod 777 /home/jasdumas/amborella.fasta.txt` command which give other users read/write access to everyone 
+
+* rename/re-download generic file name `sequence.fasta` to `vinifera.fasta`
+
+
+
+
+
