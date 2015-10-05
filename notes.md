@@ -126,6 +126,12 @@ Email from Jill: Still need
 http://phytozome.jgi.doe.gov/pz/portal.html
 http://congenie.org/downloads
 
+(Still can't find these)
+
+4. Robin edited/re-created a bash script for the exonerate script filled with the percent/threshold parameters
+
+5. Robin created a python script to trim the fasta files that are atleast 150aa (amino acids) in length and had them generate a shorter version of the file in the `/archive/PineRefSeq/douglasfir/proteinDB` directory.
+
 ### Tasks:
 
 * Transfer all files to the directory  `/archive/PineRefSeq/douglasfir/proteinDB`. My common `/home/jasdumas` folder is getting to large. use `mv` command
@@ -133,6 +139,8 @@ http://congenie.org/downloads
 * Alter permission of files with `chmod 777 /home/jasdumas/amborella.fasta.txt` command which give other users read/write access to everyone 
 
 * rename/re-download generic file name `sequence.fasta` to `vinifera.fasta`
+
+* Run the python script on the other fasta files!
 
 
 
