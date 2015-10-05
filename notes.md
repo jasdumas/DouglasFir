@@ -108,3 +108,20 @@ noon @ Home
 Your job 73382 ("proteindb.sh") has been submitted`
 
 4. Job status and tutorial [refference from the lab site](http://bioinformatics.uconn.edu/understanding-the-bbc-cluster-and-sge/)
+
+## October 5th 2015
+
+10AM @ UCONN
+
+Email from Jill: Still need 
+
+1. amborella (which I think is in PLAZA  now or at least should be in phytozome) 
+ * http://bioinformatics.psb.ugent.be/plaza/versions/plaza_v3_dicots/organism/view/Amborella+trichopoda
+ 
+2. the monocot rice (Oryza) 
+
+3. a set of our closely related gymnosperm sequences which are mostly hosted through the Congenie project.
+
+http://phytozome.jgi.doe.gov/pz/portal.html
+http://congenie.org/downloads
+
