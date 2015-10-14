@@ -155,10 +155,10 @@ http://congenie.org/downloads
  * Testing this out with a testsq.fasta (created on Atom text editor and then moved to my bbc folder, then changed permissions and copied into the `cd /archive/PineRefSeq/douglasfir/ folder`) file hand constructed with 5-6 sequences from NCBI protein db
  * Following these steps: To run the exonerate with exonerate-server, you need to build a database file and an index file, and start the server using these files. These steps are explained below: 
    * Building the database (.esd) file
-   * Building the index (.esi) file
-   * Starting the server
-   * Running the client
-   * Running under LSF
+    * Building the index (.esi) file
+    * Starting the server
+    * Running the client
+    * Running under LSF
 
 
 
