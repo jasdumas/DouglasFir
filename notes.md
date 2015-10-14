@@ -143,6 +143,17 @@ http://congenie.org/downloads
 * Run the python script on the other fasta files!
 
 
+## October 14th 2015
+
+10AM @ UCONN
+
+1. Getting set-up with payroll today
+2. https://en.wikipedia.org/wiki/Less_(Unix) : "less > more," implying that less has greater functionality than more. Tip: q = quit
+3. Check exonerate [man documentation](http://www.animalgenome.org/bioinfo/resources/manuals/exonerate/exonerate.man.html) for help on multi-threading or two different versions of the software
+4. Links to other types of genomic annotation software http://www.nature.com/nrg/journal/v13/n5/fig_tab/nrg3174_T1.html, [More details on exonerate](http://www.biomedcentral.com/1471-2105/6/31)
+5. Client-server version of Exonerate: http://www.animalgenome.org/bioinfo/resources/manuals/exonerate/server.html
+6. 
+
 
 
 
