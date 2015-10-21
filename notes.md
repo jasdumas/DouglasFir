@@ -165,31 +165,40 @@ http://congenie.org/downloads
 
 9AM @ HOME
 
-1. I totaly downloaded the protein sequnce files wrong and made the fasta files too big! All I need to do was Data -> Download -> Fasta Data and you will see protein sets
+1. I totaly downloaded the protein sequnce files wrong and made the fasta files too big! All I need to do was Data -> Download -> Fasta Data and you will see protein sets 
 
-  * [10/21/15, 10:39:00 AM] Jill Wegrzyn: So this is our summary here:
-  [10/21/15, 10:39:01 AM] Jill Wegrzyn: Amborella trichopoda - proteome.atr.tfa:26460
-  Eucalyptus grandis - proteome.egr.tfa:36449
-  Oryza sativa ssp. japonica - proteome.osa.tfa:40718
-  Physcomitrella patens - proteome.ppa.tfa:32400
-  Populus trichocarpa - proteome.ptr.tfa:41434
-  Vitis vinifera - proteome.vvi.tfa:26238
+2. Robin re-downloaded the files, and put them in the path `/archive/PineRefSeq/douglasfir/proteinDB/exonerate/query` [Asana reference task](https://app.asana.com/0/46186443887322/51456931801305)
 
-   After removal of protein sequences less than 150aa, the following number of protein sequences remained
-
-  * Amborella trichopoda - shortproteome.atr.tfa:17242
-  Eucalyptus grandis - shortproteome.egr.tfa:28809
-  Oryza sativa ssp. japonica - shortproteome.osa.tfa:30688
-  Physcomitrella patens - shortproteome.ppa.tfa:20836
-  Populus trichocarpa - shortproteome.ptr.tfa:32206
-  Vitis vinifera - shortproteome.vvi.tfa:19265
-
-2. Robin re-downloaded the files, and put them in the path `/archive/PineRefSeq/douglasfir/proteinDB/exonerate/query`
-
-3. Need to kick-off a new script that runs the regular exonerate on the new short protein sequences by odifiying the `proteindb.sh` script
+3. Need to kick-off a new script that runs the regular exonerate on the new short protein sequences by modifiying the `proteindb.sh` script
  * Note: to start a job on the cluster **QSub**: qsub is used for both single and multiple node jobs:
 `qsub scriptname.sh`
 
 4. New location of the 150aa (amino acid) script: `/archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/createfasta2.py`
 
+5. Comments and notes from Jill on creating the new exonerate script on the new short proteome files made by Robin:
+ ```
+  #!/bin/bash
+  #$ -N exonerate
+  #$ -q highmem.q
+  #$ -S /bin/bash
+  #$ -pe smp 1
+  # Specify the output file
+  #$ -o exonerate_$JOB_ID.out
+  # Specify the error file
+  #$ -e exonerate_$JOB_ID.err
+  ```
 
+  * -N is just what you call the job name so you can keep track
+  *  -q is the queue to run in - exonerate holds everything in memory so you typically want to use our one high   memory node for this which is labeled here
+exonerate is not multi=threaded by default so we just ask for one CPU with this:
+  *  -pe smp 1
+  you can ask for up to 16 in the highmem.q, otherwise if you don't specify a queue, it is usually 8
+  * -o and -e is your file names for output and error messages
+the other parts are pretty much statis
+
+6. **qhost**: an overview of the server and what is happening there right now on the cluster server.
+  * NCPU is the possible CPU on each of the nodes, Load is what is happening on them; you will see that compute-2-4 is our high memory node that we will use, it has 64 possible CPU and a total of 504 GB of memory available and 120 G are currently in use so when you are requesting CPU with smp, good to take a quick look here to see what is happening
+  
+7. **qstat** will give you an idea of where things are, you want to see r. it will usually be qw for a bit...but if it hangs for a long time, either resources are slim (check qhost) or soemthing went wrong the latter is more likely as the server is not tooo busy usually
+
+8. I can use the method I currently use with creating scripts on Atom and them `scp` command to transfer files from my local computer to the bbc server but I could also try out *nano* on the command line which is apparently easier than vim
