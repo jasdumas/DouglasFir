@@ -161,6 +161,35 @@ http://congenie.org/downloads
     * Running under LSF
 
 
+## October 21 2015
 
+9AM @ HOME
+
+1. I totaly downloaded the protein sequnce files wrong and made the fasta files too big! All I need to do was Data -> Download -> Fasta Data and you will see protein sets
+
+  * [10/21/15, 10:39:00 AM] Jill Wegrzyn: So this is our summary here:
+  [10/21/15, 10:39:01 AM] Jill Wegrzyn: Amborella trichopoda - proteome.atr.tfa:26460
+  Eucalyptus grandis - proteome.egr.tfa:36449
+  Oryza sativa ssp. japonica - proteome.osa.tfa:40718
+  Physcomitrella patens - proteome.ppa.tfa:32400
+  Populus trichocarpa - proteome.ptr.tfa:41434
+  Vitis vinifera - proteome.vvi.tfa:26238
+
+   After removal of protein sequences less than 150aa, the following number of protein sequences remained
+
+  * Amborella trichopoda - shortproteome.atr.tfa:17242
+  Eucalyptus grandis - shortproteome.egr.tfa:28809
+  Oryza sativa ssp. japonica - shortproteome.osa.tfa:30688
+  Physcomitrella patens - shortproteome.ppa.tfa:20836
+  Populus trichocarpa - shortproteome.ptr.tfa:32206
+  Vitis vinifera - shortproteome.vvi.tfa:19265
+
+2. Robin re-downloaded the files, and put them in the path `/archive/PineRefSeq/douglasfir/proteinDB/exonerate/query`
+
+3. Need to kick-off a new script that runs the regular exonerate on the new short protein sequences by odifiying the `proteindb.sh` script
+ * Note: to start a job on the cluster **QSub**: qsub is used for both single and multiple node jobs:
+`qsub scriptname.sh`
+
+4. New location of the 150aa (amino acid) script: `/archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/createfasta2.py`
 
 
