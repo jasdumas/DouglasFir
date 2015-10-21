@@ -167,7 +167,7 @@ http://congenie.org/downloads
 
 1. I totaly downloaded the protein sequnce files wrong and made the fasta files too big! All I need to do was Data -> Download -> Fasta Data and you will see protein sets 
   
-![alt tag](https://cloud.githubusercontent.com/assets/6685750/10641458/50c95ebe-77e7-11e5-9633-e9313244da9c.jpeg)
+![alt tag](https://cloud.githubusercontent.com/assets/6685750/10641646/167e5d9e-77e8-11e5-8112-8111b8569a64.jpeg)
 
 2. Robin re-downloaded the files, and put them in the path `/archive/PineRefSeq/douglasfir/proteinDB/exonerate/query` [Asana reference task](https://app.asana.com/0/46186443887322/51456931801305)
 
