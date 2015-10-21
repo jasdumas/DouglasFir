@@ -1,0 +1,10 @@
+# Vitis Vinifera
+http://www.ncbi.nlm.nih.gov/protein/?term=txid29760%5BOrganism:exp%5D
+# Populus trichocarpa
+http://www.ncbi.nlm.nih.gov/protein/?term=txid3694[Organism:noexp]
+# Eucalyptus
+http://www.ncbi.nlm.nih.gov/protein/?term=txid71139[Organism:noexp]
+# Amborella trichopoda
+http://www.ncbi.nlm.nih.gov/protein/?term=txid13333[Organism:noexp]
+# Monocot Rice (Oryza)
+http://www.ncbi.nlm.nih.gov/protein/?term=txid1736658[Organism:noexp]
