@@ -166,6 +166,8 @@ http://congenie.org/downloads
 9AM @ HOME
 
 1. I totaly downloaded the protein sequnce files wrong and made the fasta files too big! All I need to do was Data -> Download -> Fasta Data and you will see protein sets 
+  
+![alt tag](https://cloud.githubusercontent.com/assets/6685750/10641458/50c95ebe-77e7-11e5-9633-e9313244da9c.jpeg)
 
 2. Robin re-downloaded the files, and put them in the path `/archive/PineRefSeq/douglasfir/proteinDB/exonerate/query` [Asana reference task](https://app.asana.com/0/46186443887322/51456931801305)
 
@@ -197,7 +199,7 @@ exonerate is not multi=threaded by default so we just ask for one CPU with this:
 the other parts are pretty much statis
 
 6. **qhost**: an overview of the server and what is happening there right now on the cluster server.
-  * NCPU is the possible CPU on each of the nodes, Load is what is happening on them; you will see that compute-2-4 is our high memory node that we will use, it has 64 possible CPU and a total of 504 GB of memory available and 120 G are currently in use so when you are requesting CPU with smp, good to take a quick look here to see what is happening
+  * NCPU is the possible CPU on each of the nodes, Load is what is happening on them; you will see that compute-2-4 is our high memory node that we will use, it has 64 possible CPU and a total of 504 GB of memory available and 120 G are currently in use so when you are requesting CPU with smp, good to take a quick look here to see what is happening ![alt tag](https://cloud.githubusercontent.com/assets/6685750/10641466/5725d116-77e7-11e5-9a05-9c2e1179d972.jpeg)
   
 7. **qstat** will give you an idea of where things are, you want to see r. it will usually be qw for a bit...but if it hangs for a long time, either resources are slim (check qhost) or soemthing went wrong the latter is more likely as the server is not tooo busy usually
 
