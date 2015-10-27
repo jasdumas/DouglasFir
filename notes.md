@@ -204,3 +204,12 @@ the other parts are pretty much statis
 7. **qstat** will give you an idea of where things are, you want to see r. it will usually be qw for a bit...but if it hangs for a long time, either resources are slim (check qhost) or soemthing went wrong the latter is more likely as the server is not tooo busy usually
 
 8. I can use the method I currently use with creating scripts on Atom and them `scp` command to transfer files from my local computer to the bbc server but I could also try out *nano* on the command line which is apparently easier than vim
+
+
+## October 23 2015
+11am @UCONN
+
+1. Gave presentation to lab on our progress   
+2. Created a BLAT submission script in addition to downloading three additional sequence scripts and modifing them with the createfasta2.py script to remove 150aa
+3. Need to check on script on Monday, but the status was still qw which means that the script has an error and did not run
+4. Going to Campus on 10/28 to get help from Robin on the script
