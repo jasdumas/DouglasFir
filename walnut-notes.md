@@ -33,4 +33,8 @@ V. Vinifera | :heavy_check_mark: | /archive/PineRefSeq/douglasfir/proteinDB/exon
 Zea mays | New Download :arrow_double_down: ftp://ftp.psb.ugent.be/pub/plaza/plaza_public_dicots_03/Fasta/proteome.zma.tfa.gz| -
 
 2. Move/Copy: mv/cp existing files to `/archive/Walnut_genomes` and download the rest from PLAZA - Robin has to change the permissions of the existing files in order for me to move files from `/archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/`   
+3. `wget filepath` for each of the above links to download the PLAZA file
+4. `chmod 777` on each downloaded file
 3. `gunzip`: to unzip .gz files into the current folder, needed for each do for each new download
+4. Run the `createfasta2.py` on each of the downloaded proteome files
+5. `cat` all the files into one!
