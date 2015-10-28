@@ -19,15 +19,17 @@ These files are now in the main directory here:
 
 | Species | Do we already have? | location |
 |----|----|---|
-[P.patens](ftp://ftp.psb.ugent.be/pub/plaza/plaza_public_dicots_03/Fasta/proteome.ppa.tfa.gz) | |
+P.patens | New Download :arrow_double_down: ftp://ftp.psb.ugent.be/pub/plaza/plaza_public_dicots_03/Fasta/proteome.ppa.tfa.gz|
 A. trichopoda | :heavy_check_mark:| /archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/shortproteome.atr.tfa
 P. trichocarpa | :heavy_check_mark:| /archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/shortproteome.ptr.tfa
 E. grandis| :heavy_check_mark:| /archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/shortproteome.egr.tfa
-A.thaliana |  |
-C.sinensis| |
+A.thaliana | New Download :arrow_double_down: ftp://ftp.psb.ugent.be/pub/plaza/plaza_public_dicots_03/Fasta/proteome.ath.tfa.gz|
+C.sinensis|New Download :arrow_double_down: ftp://ftp.psb.ugent.be/pub/plaza/plaza_public_dicots_03/Fasta/proteome.csi.tfa.gz|
 O.sativa | :heavy_check_mark:| /archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/shortproteome.osa.tfa 
-G.max| |
-P. persica| |
-S. moellendorffii| |
+G.max|New Download :arrow_double_down: ftp://ftp.psb.ugent.be/pub/plaza/plaza_public_dicots_03/Fasta/proteome.gma.tfa.gz|
+P. persica|New Download :arrow_double_down: ftp://ftp.psb.ugent.be/pub/plaza/plaza_public_dicots_03/Fasta/proteome.ppe.tfa.gz |
+C. reinhardtii | New Download :arrow_double_down: ftp://ftp.psb.ugent.be/pub/plaza/plaza_public_dicots_03/Fasta/proteome.cre.tfa.gz| -
+V. Vinifera | :heavy_check_mark: | /archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/shortproteome.vvi.tfa  
+Zea mays | New Download :arrow_double_down: ftp://ftp.psb.ugent.be/pub/plaza/plaza_public_dicots_03/Fasta/proteome.zma.tfa.gz| -
 
-2. mv existing files to `/archive/Walnut_genomes` and download the rest from PLAZA
+2. Move/Copy: mv/cp existing files to `/archive/Walnut_genomes` and download the rest from PLAZA - Robin has to change the permissions of the existing files in order for me to move files from `/archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/`
