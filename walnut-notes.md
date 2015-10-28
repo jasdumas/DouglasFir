@@ -37,4 +37,6 @@ Zea mays | New Download :arrow_double_down: ftp://ftp.psb.ugent.be/pub/plaza/pla
 4. `chmod 777` on each downloaded file
 3. `gunzip`: to unzip .gz files into the current folder, needed for each do for each new download
 4. Run the `createfasta2.py` on each of the downloaded proteome files
-5. `cat` all the files into one!
+5. `cat` all the files into one!   
+cat shortproteome.atr.tfa shortproteome.ptr.tfa shortproteome.egr.tfa shortproteome.osa.tfa shortproteome.vvi.tfa shortproteome.ppa.tfa shortproteome.ath.tfa shortproteome.csi.tfa shortproteome.gma.tfa shortproteome.ppe.tfa shortproteome.cre.tfa shortproteome.zma.tfa > spcombo.tfa
+6. The next step is go forward with a BLAT run of these proteins and such - go ahead and use asana for the path to your scripts and output FASTA
