@@ -206,10 +206,31 @@ the other parts are pretty much statis
 8. I can use the method I currently use with creating scripts on Atom and them `scp` command to transfer files from my local computer to the bbc server but I could also try out *nano* on the command line which is apparently easier than vim
 
 
-## October 23 2015
+## October 23rd 2015   
 11am @UCONN
 
-1. Gave presentation to lab on our progress   
-2. Created a BLAT submission script in addition to downloading three additional sequence scripts and modifing them with the createfasta2.py script to remove 150aa
+1. Gave presentation to lab on our progress and there was alot of good feedback from Jill on the roadblocks we were encountering.     
+2. Created a [BLAT](https://genome.ucsc.edu/goldenpath/help/blatSpec.html) submission script in addition to downloading three additional sequence scripts and modifing them with the createfasta2.py script to remove 150aa
+3. New things learned for Command Line: 
+  * `wget`: is a free utility for non-interactive download of files from the web. 
+  * `unzip`: unzip file.zip -d destination_folder
+  * `python script.sh`: this will run python scripts
+  * `ls *.fileType`: For big directories you can narrow down the listing with specifying a filetype (.tfa, .sh, etc...)
+  * `cat`: Move and aggreagate new files with -> cat [options] [file_names] > newfile.txt https://en.wikipedia.org/wiki/Cat_(Unix)
+  * 
 3. Need to check on script on Monday, but the status was still qw which means that the script has an error and did not run
 4. Going to Campus on 10/28 to get help from Robin on the script
+
+
+## October 28th 2015
+9:45am @ UCONN   
+
+1. BLAT Script was fixed by Robin, as I had the database and the query position swapped and the generic output.psl still in the script. The current script is in the repo as `blatjd.sh`  
+2. scirpt matrix (blat format: blat database query [-ooc=11.ooc] output.psl)   
+
+| database | query | parameters | outputfile |
+|----------|-------|------------|------------|
+|/archive/PineRefSeq/douglasfir/psme800bins/shortPsme800_v1.0.fasta$SGE_TASK_ID.fa | /archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/newshort.tfa | -q=prot -t=dnax -maxIntron=800000 -fastMap -minScore=70 -minIdentity=60 | newshort$SGE_TASK_ID.psl |
+
+3. Moving on to another Project!
+
