@@ -21,7 +21,9 @@
 # N
 # O
 # P
-**[PLAZA](http://bioinformatics.psb.ugent.be/plaza/versions/plaza_v3_dicots/download/index)** - is an access point for plant comparative genomics centralizing genomic data produced by different genome sequencing initiatives. It integrates plant sequence data and comparative genomics methods and provides an online platform to perform evolutionary analyses and data mining within the green plant lineage (Viridiplantae).
+**[PLAZA](http://bioinformatics.psb.ugent.be/plaza/versions/plaza_v3_dicots/download/index)** - is an access point for plant comparative genomics centralizing genomic data produced by different genome sequencing initiatives. It integrates plant sequence data and comparative genomics methods and provides an online platform to perform evolutionary analyses and data mining within the green plant lineage (Viridiplantae).  
+
+**proteome** - is the entire set of proteins expressed by a genome, cell, tissue or organism at a certain time. More specifically, it is the set of expressed proteins in a given type of cell or organism, at a given time, under defined conditions.
 # Q
 # R
 # S
