@@ -6,7 +6,7 @@
 #############################################################
 
 # Specify name to be used to identify this run
-#$ -N blatjd
+#$ -N blatwalnut
 
 ######$ -q highpri.q
 
@@ -23,24 +23,18 @@
 
 # Specify the output file
 
-#$ -o /archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/blatjd_$JOB_ID.out
+#$ -o /archive/Walnut_genomes/blatwalnut_$JOB_ID.out
 
 # Specify the error file
 
-#$ -e /archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/blatjd_$JOB_ID.err
+#$ -e /archive/Walnut_genomes/blatwalnut_$JOB_ID.err
 
 #$ -cwd
 # Run the program
-#cd /archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/pabies
-echo shortPsme800_v1.0.fasta$SGE_TASK_ID.fa
-# blat format: blat database query [-ooc=11.ooc] output.psl
+echo ChineseWalnut.500.scaffolds.fasta$SGE_TASK_ID.fa
 
-#blat /archive/PineRefSeq/douglasfir/psme800bins/shortPsme800_v1.0.fasta$SGE_TASK_ID.fa  /archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/shortPabies1.0-HC-pep.faa -q=prot -t=dnax -maxIntron=800000 -fastMap -minScore=70 -minIdentity=60 pabies$SGE_TASK_ID.psl
+# change working directory
+cd /archive/Walnut_genomes/
 
-#cd /archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/pila
-#blat /archive/PineRefSeq/douglasfir/psme800bins/shortPsme800_v1.0.fasta$SGE_TASK_ID.fa  /archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/pila.transcriptome.pep.fasta -q=prot -t=dnax -maxIntron=800000 -fastMap -minScore=70 -minIdentity=60 pila$SGE_TASK_ID.psl
-
-# concatenated the 6 species from PLAZA into newshort.tfa file
-# cat shortproteome.atr.tfa shortproteome.egr.tfa shortproteome.osa.tfa shortproteome.ppa.tfa shortproteome.ptr.tfa shortproteome.vvi.tfa > newshort.tfa
-cd /archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/newshort
-blat /archive/PineRefSeq/douglasfir/psme800bins/shortPsme800_v1.0.fasta$SGE_TASK_ID.fa  /archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/newshort.tfa -q=prot -t=dnax -maxIntron=800000 -fastMap -minScore=70 -minIdentity=60 newshort$SGE_TASK_ID.psl
+## blat format: blat database query [-ooc=11.ooc] output.psl
+blat /archive/Walnut_genomes/ChineseWalnut.500.scaffolds.fasta$SGE_TASK_ID.fa  /archive/Walnut_genomes/spcombo.tfa -q=prot -t=dnax -maxIntron=800000 -fastMap -minScore=70 -minIdentity=60 spcombo$SGE_TASK_ID.psl
