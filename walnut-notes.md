@@ -40,3 +40,12 @@ Zea mays | New Download :arrow_double_down: ftp://ftp.psb.ugent.be/pub/plaza/pla
 5. `cat` all the files into one!   
 cat shortproteome.atr.tfa shortproteome.ptr.tfa shortproteome.egr.tfa shortproteome.osa.tfa shortproteome.vvi.tfa shortproteome.ppa.tfa shortproteome.ath.tfa shortproteome.csi.tfa shortproteome.gma.tfa shortproteome.ppe.tfa shortproteome.cre.tfa shortproteome.zma.tfa > spcombo.tfa
 6. From Jill: The next step is go forward with a BLAT run of these proteins and such - go ahead and use asana for the path to your scripts and output FASTA
+
+
+## November 6 2015    
+10AM @Home   
+1. Create separate scripts for each of the walnut genomes and then submit with qsub
+  * ChineseWalnut.500.scaffolds.fasta (already created last week)
+  * ChineseWignut.500.scaffolds.fasta
+  * HindsBlackWalnut.500.scaffolds.fasta
+2. task 2
