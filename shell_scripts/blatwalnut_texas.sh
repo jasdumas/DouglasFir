@@ -31,10 +31,10 @@
 
 #$ -cwd
 # Run the program
-echo TexasWalnut.500.scaffolds.fasta$SGE_TASK_ID.fa
+echo TexasWalnut.500.scaffolds.fasta
 
 # change working directory
 cd /archive/Walnut_genomes/
 
 ## blat format: blat database query [-ooc=11.ooc] output.psl
-blat /archive/Walnut_genomes/TexasWalnut.500.scaffolds.fasta$SGE_TASK_ID.fa  /archive/Walnut_genomes/spcombo.tfa -q=prot -t=dnax -maxIntron=800000 -fastMap -minScore=70 -minIdentity=60 spcombo_texas$SGE_TASK_ID.psl
+blat /archive/Walnut_genomes/TexasWalnut.500.scaffolds.fasta  /archive/Walnut_genomes/spcombo.tfa -q=prot -t=dnax -maxIntron=800000 -fastMap -minScore=70 -minIdentity=60 spcombo_texas$SGE_TASK_ID.psl
