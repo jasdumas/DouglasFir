@@ -14,6 +14,11 @@
 # This sets the maximum number of concurrent tasks to 10, so that no more than 2 jobs will be run at once                                                               
 #$ -tc 16
 
+# Email address (change to yours)
+#$ -M jasmine.dumas@gmail.com
+
+# Specify mailing options: b=beginning, e=end, s=suspended, n=never, a=aborted or suspended
+#$ -m besa
 
 # Specify that bash shell should be used to process this script
 
