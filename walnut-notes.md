@@ -49,4 +49,18 @@ cat shortproteome.atr.tfa shortproteome.ptr.tfa shortproteome.egr.tfa shortprote
   * ChineseWalnut.500.scaffolds.fasta (already created last week)
   * ChineseWignut.500.scaffolds.fasta
   * HindsBlackWalnut.500.scaffolds.fasta
-2. task 2
+  * `blatwalnut_black.sh  blatwalnut.sh  blatwalnut_texas.sh  blatwalnut_wing.sh`
+
+
+## November 13 2015   
+10AM @UCONN    
+
+1. Edited the blatwalnut.sh script and removed the SGE_TASK tag to mediate the error:  Can't open /archive/Walnut_genomes/HindsBlackWalnut.500.scaffolds.fasta44.fa to read: No such file or directory     
+2. Re-ran the BLAT scripts which should hopefully run quite quick   
+3. Next step is to run exonerate on the BLAT script for comparisons - waiting for a script template    
+  * [11/13/15, 10:41:47 AM] Jill Wegrzyn: let's get your script that will identify the genomic contigs (from the scaffolds file with hits) and then take just those and run exonerate against them
+blat should probably finish pretty quick but exonerate is not so which is why we'll use this first pass filtering
+ * path location: `/common/robin/wholegenome/douglasfir/augustus/BLAT2/bins/serial.exonerate.test.sh`
+4. 
+
+
