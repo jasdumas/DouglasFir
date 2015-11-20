@@ -61,6 +61,15 @@ cat shortproteome.atr.tfa shortproteome.ptr.tfa shortproteome.egr.tfa shortprote
   * [11/13/15, 10:41:47 AM] Jill Wegrzyn: let's get your script that will identify the genomic contigs (from the scaffolds file with hits) and then take just those and run exonerate against them
 blat should probably finish pretty quick but exonerate is not so which is why we'll use this first pass filtering
  * path location: `/common/robin/wholegenome/douglasfir/augustus/BLAT2/bins/serial.exonerate.test.sh`
-4. 
+4. BLAT run from November 6th created too many/incorrect .psl files, so I was trying to create an R script to delete those output files
+
+## November 20 2015      
+10:45AM @ UCONN      
+
+1. Trying to remove the junk .psl files
+2. Recieved an email from Larry @ UCONN about over-using the cluster resources and my jobs were deleted
+3. Changed shell_scripts to have #$ -tc 4  to limit the array to four concurrent tasks at a time. instead of the 16 which they were on previously.
+4. Once I remove the junk files, I need to run exonerate on the selected/matched scaffolds and put them on Asana. __Record Exonerate run information here.  How many scaffolds were selected from the BLAT runs in total (for each species).  End results in terms of how many sequences aligned to this shortened genome.__ - from Jill
+
 
 
