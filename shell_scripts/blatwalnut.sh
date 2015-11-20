@@ -18,7 +18,7 @@
 #$ -M jasmine.dumas@gmail.com
 
 # Specify mailing options: b=beginning, e=end, s=suspended, n=never, a=aborted or suspended
-#$ -m besa
+#$ -m e
 
 # Specify that bash shell should be used to process this script
 
