@@ -5,20 +5,22 @@
 ##### /common/template_smp.sh ###############################
 #############################################################
 
+#
+
 # Specify name to be used to identify this run
-#$ -N blatwalnut_black
+#$ -N bw-ch
 
-######$ -q highpri.q
+#$ -q highmem.q
 
-#$ -t 1-983:1                                                                                                                                                            
+#$ -t 1-20:1                                                                                                                                                            
 # This sets the maximum number of concurrent tasks to 10, so that no more than 2 jobs will be run at once                                                               
-#$ -tc 4
+#$ -tc 5
 
-# Email address (change to yours)
+# email address
 #$ -M jasmine.dumas@gmail.com
 
-# Specify mailing options: b=beginning, e=end, s=suspended, n=never, a=aborted or suspended
-#$ -m besa
+# mailing options:
+#$ -m e
 
 
 # Specify that bash shell should be used to process this script
@@ -29,18 +31,15 @@
 
 # Specify the output file
 
-#$ -o /archive/Walnut_genomes/blatwalnut_black_$JOB_ID.out
+#$ -o blatwalnut_$JOB_ID.out
 
 # Specify the error file
 
-#$ -e /archive/Walnut_genomes/blatwalnut_black_$JOB_ID.err
+#$ -e blatwalnut_$JOB_ID.err
 
 #$ -cwd
 # Run the program
-echo HindsBlackWalnut.500.scaffolds.fasta
-
-# change working directory
-cd /archive/Walnut_genomes/
+echo HindsBlackWalnut.500.scaffolds.fasta$SGE_TASK_ID.fa
 
 ## blat format: blat database query [-ooc=11.ooc] output.psl
-blat /archive/Walnut_genomes/HindsBlackWalnut.500.scaffolds.fasta  /archive/Walnut_genomes/spcombo.tfa -q=prot -t=dnax -maxIntron=800000 -fastMap -minScore=70 -minIdentity=60 spcombo_black$SGE_TASK_ID.psl
+blat /archive/Walnut_genomes/Hinds_black_walnut/HindsBlackWalnut.500.scaffolds.fasta$SGE_TASK_ID.fa  /archive/Walnut_genomes/spcombo.tfa -q=prot -t=dnax -maxIntron=800000 -fastMap -minScore=70 -minIdentity=60 spcombo_black$SGE_TASK_ID.psl
