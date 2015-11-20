@@ -1,5 +1,3 @@
-#!/bin/bash
-
 #############################################################
 ##### TEMPLATE SGE SCRIPT - BLAST EXAMPLE ###################
 ##### /common/template_smp.sh ###############################
@@ -43,3 +41,4 @@ echo HindsBlackWalnut.500.scaffolds.fasta$SGE_TASK_ID.fa
 
 ## blat format: blat database query [-ooc=11.ooc] output.psl
 blat /archive/Walnut_genomes/Hinds_black_walnut/HindsBlackWalnut.500.scaffolds.fasta$SGE_TASK_ID.fa  /archive/Walnut_genomes/spcombo.tfa -q=prot -t=dnax -maxIntron=800000 -fastMap -minScore=70 -minIdentity=60 spcombo_black$SGE_TASK_ID.psl
+
