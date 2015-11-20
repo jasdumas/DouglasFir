@@ -12,7 +12,7 @@
 
 #$ -t 1-983:1                                                                                                                                                            
 # This sets the maximum number of concurrent tasks to 10, so that no more than 2 jobs will be run at once                                                               
-#$ -tc 16
+#$ -tc 4
 
 # Email address (change to yours)
 #$ -M jasmine.dumas@gmail.com
