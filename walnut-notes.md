@@ -70,6 +70,25 @@ blat should probably finish pretty quick but exonerate is not so which is why we
 2. Recieved an email from Larry @ UCONN about over-using the cluster resources and my jobs were deleted
 3. Changed shell_scripts to have #$ -tc 4  to limit the array to four concurrent tasks at a time. instead of the 16 which they were on previously.
 4. Once I remove the junk files, I need to run exonerate on the selected/matched scaffolds and put them on Asana. __Record Exonerate run information here.  How many scaffolds were selected from the BLAT runs in total (for each species).  End results in terms of how many sequences aligned to this shortened genome.__ - from Jill
+5. Steps to re-do script, bin down the reference genome and Run the BLAT script correctly now:
+  * Create a new folder for each genome ie (/archive/Walnut_genomes/Hinds_black_walnut):
+    `mkdir /archive/Walnut_genomes/ChineseWalnut`
+  * Copy the shell script, the scratch.txt, and the splitfasta2.py to the new folder:
+    `cp /archive/Walnut_genomes/blatwalnut.sh /archive/Walnut_genomes/ChineseWalnut`     
+    `cp /archive/Walnut_genomes/Hinds_black_walnut/scratch.txt /archive/Walnut_genomes/ChineseWalnut`      
+    `cp /archive/Walnut_genomes/Hinds_black_walnut/splitfasta2.py /archive/Walnut_genomes/ChineseWalnut`     
+  * Change directory (if not in the specific genome folder yet)
+    `cd /archive/Walnut_genomes/ChineseWalnut`
+  * Modifiy the scratch.txt script for the file individually
+    # example done by Robin 11/20/2015 @ 1PM - UCONN
+    `python splitfasta2.py --fasta HindsBlackWalnut.500.scaffolds.fasta --path /archive/Walnut_genomes --pieces 20 `      
+    Current one for the example: `python splitfasta2.py --fasta ChineseWalnut.500.scaffolds.fasta --path  /archive/Walnut_genomes --pieces 20`       
+    `python splitfasta2.py --fasta ChineseWignut.500.scaffolds.fasta --path /archive/Walnut_genomes --pieces 20`      
+    `python splitfasta2.py --fasta TexasWalnut.500.scaffolds.fasta --path /archive/Walnut_genomes --pieces 20`      
+ * Call the python line in the terminal and it takes a few seconds and the outputted bins will now be avaibale in the folder
+ * Modify the shell script with vim and use the template/example: https://github.com/jasdumas/DouglasFir/blob/master/shell_scripts/blatwalnut_black.sh      
+ * submit via qsub:
+    Your job-array 109421.1-20:1 ("bw-chinese") has been submitted
 
 
 
