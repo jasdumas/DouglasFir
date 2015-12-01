@@ -90,5 +90,14 @@ blat should probably finish pretty quick but exonerate is not so which is why we
  * submit via qsub:
     Your job-array 109421.1-20:1 ("bw-chinese") has been submitted
 
+## November 30, December 3     
+REMOTE
+
+Copy into the command line for each walnut genome (texas specifically):    
+`mkdir /archive/Walnut_genomes/texas  `      
+`cp /archive/Walnut_genomes/blatwalnut_texas.sh /archive/Walnut_genomes/texas`          
+`cp /archive/Walnut_genomes/Hinds_black_walnut/scratch.txt /archive/Walnut_genomes/texas`      
+`cp /archive/Walnut_genomes/Hinds_black_walnut/splitfasta2.py /archive/Walnut_genomes/texas` 
+`cd /archive/Walnut_genomes/texas`
 
 
