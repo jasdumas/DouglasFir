@@ -102,7 +102,7 @@ Copy into the command line for each walnut genome (texas specifically):
 
 Copy into the command line for each walnut genome (ChineseWingnut specifically):    
 `mkdir /archive/Walnut_genomes/ChineseWignut  `      
-`cp /archive/Walnut_genomes/blatwalnut_texas.sh /archive/Walnut_genomes/ChineseWignut`          
+`cp /archive/Walnut_genomes/blatwalnut_wing.sh /archive/Walnut_genomes/ChineseWignut`          
 `cp /archive/Walnut_genomes/Hinds_black_walnut/scratch.txt /archive/Walnut_genomes/ChineseWignut`      
 `cp /archive/Walnut_genomes/Hinds_black_walnut/splitfasta2.py /archive/Walnut_genomes/ChineseWignut` 
 `cd /archive/Walnut_genomes/ChineseWignut`
