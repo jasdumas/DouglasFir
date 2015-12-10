@@ -18,10 +18,11 @@
 #$ -cwd                   
 #start=$(date + %s.%N)
 # Run the program
-echo shortPsme800_v1.0.fasta$SGE_TASK_ID.fa
+echo HindsBlackWalnut.500.scaffolds.fasta$SGE_TASK_ID.fa
 
-cd /archive/PineRefSeq/douglasfir/proteinDB/exonerate/query/atregr
-exonerate --model protein2genome --query ../shortproteome.atregr.tfa --target /archive/PineRefSeq/douglasfir/psme800bins/shortPsme800_v1.0.fasta$SGE_TASK_ID.fa -n 1 --percent 70 --score 100 --minintron 20 --maxintron 800000 --showalignment no --showtargetgff yes --geneseed 250 --forcegtag --hspfilter 100 --showvulgar yes > testshortproteome.vvi.$SGE_TASK_ID.gff
+cd /archive/Walnut_genomes/Hinds_black_walnut/
+
+exonerate --model protein2genome --query ../archive/Walnut_genomes/spcombo.tfa --target /archive/Walnut_genomes/Hinds_black_walnut/HindsBlackWalnut.500.scaffolds.fasta$SGE_TASK_ID.fa -n 1 --percent 70 --score 100 --minintron 20 --maxintron 800000 --showalignment no --showtargetgff yes --geneseed 250 --forcegtag --hspfilter 100 --showvulgar #yes > walnut_black.$SGE_TASK_ID.gff
 
 #end=$(date +%s.%N)
 #runtime=$(python -c "print(${end}-${start})")
