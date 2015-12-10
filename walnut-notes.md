@@ -107,4 +107,8 @@ Copy into the command line for each walnut genome (ChineseWingnut specifically):
 `cp /archive/Walnut_genomes/Hinds_black_walnut/splitfasta2.py /archive/Walnut_genomes/ChineseWignut`      
 `cd /archive/Walnut_genomes/ChineseWignut`
 
+## December 10      
+REMOTE
+
+* Use the [template](https://github.com/jasdumas/DouglasFir/blob/master/shell_scripts/tempplate_exon-to-scaffold.sh) from sumaira to pull matching scaffolds for an exonerate run
 
