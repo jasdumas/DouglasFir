@@ -3,15 +3,21 @@
 # from sumaira on 11/13
 ############# exon_black.sh ###################
 #!/bin/bash                                                                                        
-#$ -N exon-ch                                                                                                                                                       # This sets the task range in the array from 1 to 4 with a step size of 1                                                                                              
-#$ -t 1-983:1                                                                                                                                                            
+#$ -N exon-ch 
+
+# This sets the task range in the array from 1 to 4 with a step size of 1                                                                                              
+#$ -t 1-20:1
+
 # This sets the maximum number of concurrent tasks to 10, so that no more than 2 jobs will be run at once                                                               
 #$ -tc 6
-#$ -q highmem.q
-#$ -S /bin/bash           
+
+#$ -S /bin/bash 
+
 #$ -pe smp 1
+
 # Specify the output file                                                                         
 #$ -o exon-ch_$JOB_ID.out
+
 # Specify the error file
 #$ -e exon-ch_$JOB_ID.err
 
@@ -22,7 +28,7 @@ echo ChineseWalnut.500.scaffolds.fasta$SGE_TASK_ID.fa
 
 cd /archive/Walnut_genomes/ChineseWalnut
 
-exonerate --model protein2genome --query ../archive/Walnut_genomes/spcombo.tfa --target /archive/Walnut_genomes/ChineseWalnut/ChineseWalnut.500.scaffolds.fasta$SGE_TASK_ID.fa -n 1 --percent 70 --score 100 --minintron 20 --maxintron 800000 --showalignment no --showtargetgff yes --geneseed 250 --forcegtag --hspfilter 100 --showvulgar #yes > walnut_ch.$SGE_TASK_ID.gff
+exonerate --model protein2genome --query /archive/Walnut_genomes/spcombo.tfa --target /archive/Walnut_genomes/ChineseWalnut/ChineseWalnut.500.scaffolds.fasta$SGE_TASK_ID.fa -n 1 --percent 70 --score 100 --minintron 20 --maxintron 800000 --showalignment no --showtargetgff yes --geneseed 250 --forcegtag --hspfilter 100 --showvulgar yes > walnut_ch.$SGE_TASK_ID.gff
 
 #end=$(date +%s.%N)
 #runtime=$(python -c "print(${end}-${start})")
