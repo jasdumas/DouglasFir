@@ -112,3 +112,33 @@ REMOTE
 
 * Use the [template](https://github.com/jasdumas/DouglasFir/blob/master/shell_scripts/tempplate_exon-to-scaffold.sh) from sumaira to pull matching scaffolds for an exonerate run
 
+## December 11
+UCONN 1PM-4PM
+
+Submitted 4 new exonerate scripts to qsub     
+  * exon_black.sh
+  * exon-ch.sh
+  * exon-texas.sh
+  * exon_ch-wig.sh          
+
+Contatenate all of the .psl BLAT run files into one then count the lines to determine how many scaffolds had a hit
+* Navigate to each folder
+* ls *.psl to get a listing of all of the output files from the BLAT run
+* copy here and create cat line for each:
+  * Hinds_black_walnut: `cat spcombo_black10.psl spcombo_black13.psl spcombo_black16.psl spcombo_black19.psl spcombo_black2.psl spcombo_black5.psl spcombo_black8.psl spcombo_black11.psl  spcombo_black14.psl  spcombo_black17.psl  spcombo_black1.psl spcombo_black3.psl spcombo_black6.psl spcombo_black9.psl spcombo_black12.psl spcombo_black15.psl  spcombo_black18.psl spcombo_black20.psl spcombo_black4.psl spcombo_black7.psl > super_output_spcombo_black.psl`
+  * Chinese Walnut: `cat spcombo_ch_10.psl spcombo_ch_13.psl spcombo_ch_16.psl spcombo_ch_19.psl spcombo_ch_2.psl spcombo_ch_5.psl spcombo_ch_8.psl spcombo_ch_11.psl spcombo_ch_14.psl spcombo_ch_17.psl spcombo_ch_1.psl spcombo_ch_3.psl  spcombo_ch_6.psl spcombo_ch_9.psl spcombo_ch_12.psl spcombo_ch_15.psl spcombo_ch_18.psl spcombo_ch_20.psl spcombo_ch_4.psl spcombo_ch_7.psl > super_output_spcombo_chinese.psl`
+  * Texas: `cat spcombo_texas_13.psl spcombo_texas_17.psl spcombo_texas_20.psl spcombo_texas_5.psl spcombo_texas_9.psl spcombo_texas_10.psl spcombo_texas_14.psl spcombo_texas_18.psl spcombo_texas_2.psl spcombo_texas_6.psl spcombo_texas_11.psl spcombo_texas_15.psl spcombo_texas_19.psl spcombo_texas_3.psl spcombo_texas_7.psl spcombo_texas_12.psl spcombo_texas_16.psl spcombo_texas_1.psl spcombo_texas_4.psl spcombo_texas_8.psl > super_output_spcombo_texas.psl`
+  * ChineseWignut: `cat spcombo_wing_10.psl spcombo_wing_13.psl spcombo_wing_16.psl spcombo_wing_19.psl spcombo_wing_2.psl  spcombo_wing_5.psl spcombo_wing_8.psl spcombo_wing_11.psl spcombo_wing_14.psl spcombo_wing_17.psl spcombo_wing_1.psl spcombo_wing_3.psl spcombo_wing_6.psl spcombo_wing_9.psl spcombo_wing_12.psl spcombo_wing_15.psl spcombo_wing_18.psl spcombo_wing_20.psl  spcombo_wing_4.psl spcombo_wing_7.psl > super_output_spcombo_wig.psl`
+
+* This is the command to do this task [`wc -l myfile`](http://unix.stackexchange.com/questions/25344/how-can-i-count-the-number-of-lines-of-file-with-common-tools-in-a-bash) 
+  * `wc -l super_output_spcombo_black.psl` =  36266 super_output_spcombo_black.psl 
+  * `wc -l super_output_spcombo_chinese.psl` = 43805 super_output_spcombo_chinese.psl
+  * `wc -l super_output_spcombo_texas.psl` = 52532 super_output_spcombo_texas.psl
+  * `wc -l super_output_spcombo_wig.psl` = 56404 super_output_spcombo_wig.psl
+
+From Jill on Asana: 
+> please record how many scaffolds from each genome had a blat hit, from there, create a new genome target with just hte scaffolds with hits (this will be a unique set for each genome).  Then run exonerate against them - with a minimum coverage of 70% and 100% identity
+> We are also going to want to add in some protein sequences that we dervied from Juglans regia (common walnut) - these are available on FARM and you will just need to ask someone to transfer them over to BBC for you: /group/nealedata3/Reju_Transcriptome/large_set/combined/Combined_trimmedBest_pep.fasta          
+
+New BBC location of Juglans regia (common walnut): `cd /archive/Walnut_genomes/Reju_Transcriptome/large_set/`
+
