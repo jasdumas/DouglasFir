@@ -1,19 +1,21 @@
 # script that pulls just the scaffolds that received hits into a separate multi-FASTA file 
 # (genome scaffolds) for your next exonerate run
 # from sumaira on 11/13
-############# exon_black.sh ###################
+############# exon_ch.sh ###################
 #!/bin/bash                                                                                        
 #$ -N exon-ch 
 
-# This sets the task range in the array from 1 to 4 with a step size of 1                                                                                              
-#$ -t 1-20:1
+# This sets the task range in the array from 1 to 20 with a step size of 1                                                                                              
+#$ -t 1-20:1   
 
-# This sets the maximum number of concurrent tasks to 10, so that no more than 2 jobs will be run at once                                                               
-#$ -tc 6
+# This sets the maximum number of concurrent tasks to 3                                                              
+#$ -tc 3
 
-#$ -S /bin/bash 
+# Specify that bash shell should be used to process this script
+#$ -S /bin/bash  
 
-#$ -pe smp 1
+# multiple cores per process (say 4 each)
+#$ -pe smp 4
 
 # Specify the output file                                                                         
 #$ -o exon-ch_$JOB_ID.out
