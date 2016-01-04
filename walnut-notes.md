@@ -162,4 +162,8 @@ scaffolds_chinesewalnut_blathits.fasta - 7496 scaffolds
 scaffolds_hindblack_blathits.fasta - 2845 scaffolds
 scaffolds_texas_blathits.fasta - 8996 scaffolds
 
-
+### Next for today
+* *gene training component (machine learning that is executed with [AUGUSTUS](http://augustus.gobics.de/))*: we are aiming to use this protein evidence and genetic evidence to improve prediction of the gene space.      
+   * [Web Tutorial](http://bioinf.uni-greifswald.de/webaugustus/predictiontutorial.gsp#param_id)
+   * From Jill on skype: _Hey guys, I am putting a couple of updates on the asana group as well - one of the big changes for the gene side will be an attempt to use the web training of augustus which might be easier - we haven't tried it yet but it should be more achievable given the size of the walnut genomes_
+   * Transdecoder Code from Sumaira via Asana:        `/opt/bioinformatics/trinity2/trinity-plugins/TransDecoder_r20131110/TransDecoder -t /archive/walnut_annotation/altESTs/centroid_all_altEST.fasta --CPU 6 --search_pfam /tempdata2/sugarpine_transcriptome/Pfam-A.hmm`
