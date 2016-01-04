@@ -142,3 +142,24 @@ From Jill on Asana:
 
 New BBC location of Juglans regia (common walnut): `cd /archive/Walnut_genomes/Reju_Transcriptome/large_set/`
 
+## January 4     
+@ HOME 9-10:30am      
+
+* I was not counting the correct unique scaffolds but rather the hits, which is wrong. Sumaira from the lab edited my attempts on Asana to assist with the correct count:       
+
+> So I took Jasmine's previous blat runs and concatenated the blat results from the  common walnut proteome on FARM. This was done for each specie the paths are given below:
+/archive/Walnut_genomes/blat_chinese_wignut/blat2/allblathits.psl 
+/archive/Walnut_genomes/ChineseWalnut/blat2/all_chinesewalnut.psl 
+/archive/Walnut_genomes/Hinds_black_walnut/blat2/all_blat_hits.psl
+/archive/Walnut_genomes/texas/blat2/allblathits.psl 
+From each psl, scaffolds with blat hits were selected (with no duplicated scaffold) this was done by:
+cut -f14  allblathits.psl  | sort - | uniq >  unique_scaffolds_blathits.txt
+Then a script was used to recreate the scaffold by selecting only those scaffold with blat hits. An example of this script can be found here:
+ /archive/Walnut_genomes/blat_chinese_wignut/blat2/scaffolds3.py
+The recreated scaffold for each specie can be found in the same directories as mentioned above:
+scaffolds_wignut_blathits.fasta - 8609 scaffolds
+scaffolds_chinesewalnut_blathits.fasta - 7496 scaffolds
+scaffolds_hindblack_blathits.fasta - 2845 scaffolds
+scaffolds_texas_blathits.fasta - 8996 scaffolds
+
+
